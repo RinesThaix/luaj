@@ -566,7 +566,7 @@ create globals that contain the debug library in addition to the other standard 
 
 To install dynamically from lua use java-class-based require:</em>:
 <pre>
-	require 'org.luaj.vm2.lib.DebugLib'
+	require 'org.luaj.vm2.lib.debug.DebugLib'
 </pre>
 
 The <em>lua</em> command line utility includes the <em>debug</em> library by default.

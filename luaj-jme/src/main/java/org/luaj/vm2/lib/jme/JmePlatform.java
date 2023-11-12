@@ -27,7 +27,7 @@ import org.luaj.vm2.compiler.LuaC;
 import org.luaj.vm2.lib.BaseLib;
 import org.luaj.vm2.lib.Bit32Lib;
 import org.luaj.vm2.lib.CoroutineLib;
-import org.luaj.vm2.lib.DebugLib;
+import org.luaj.vm2.lib.debug.DebugLib;
 import org.luaj.vm2.lib.MathLib;
 import org.luaj.vm2.lib.OsLib;
 import org.luaj.vm2.lib.PackageLib;

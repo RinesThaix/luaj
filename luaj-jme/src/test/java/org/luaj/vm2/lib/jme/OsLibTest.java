@@ -15,7 +15,7 @@ class OsLibTest {
 	@BeforeEach
 	public void reset() {
 		jme_lib = JmePlatform.standardGlobals().get("os");
-		time = 998571302000L/1000.0; // todo figure out if this needs to be compensated for timezone, potentially needs to be 998564102000L
+		time = 998564102000L/1000.0;
 	}
 
 	void test(String format, String expected) {

@@ -27,10 +27,10 @@ import java.io.PrintStream;
 import java.io.Reader;
 
 import org.luaj.vm2.lib.BaseLib;
-import org.luaj.vm2.lib.DebugLib;
 import org.luaj.vm2.lib.IoLib;
 import org.luaj.vm2.lib.PackageLib;
 import org.luaj.vm2.lib.ResourceFinder;
+import org.luaj.vm2.lib.debug.DebugLibBase;
 
 /**
  * Global environment used by luaj. Contains global variables referenced by
@@ -162,7 +162,7 @@ public class Globals extends LuaTable {
 	 * The DebugLib instance loaded into this Globals, or null if debugging is
 	 * not enabled
 	 */
-	public DebugLib debuglib;
+	public DebugLibBase debuglib;
 
 	/**
 	 * Interface for module that converts a Prototype into a LuaFunction with an

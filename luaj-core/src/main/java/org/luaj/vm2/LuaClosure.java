@@ -21,7 +21,7 @@
 ******************************************************************************/
 package org.luaj.vm2;
 
-import org.luaj.vm2.lib.DebugLib.CallFrame;
+import org.luaj.vm2.lib.debug.DebugLibBase;
 
 /**
  * Extension of {@link LuaFunction} which executes lua bytecode.
@@ -634,7 +634,7 @@ public class LuaClosure extends LuaFunction {
 		String file = "?";
 		int line = -1;
 		{
-			CallFrame frame = null;
+			DebugLibBase.CallFrame frame = null;
 			if (globals != null && globals.debuglib != null) {
 				frame = globals.debuglib.getCallFrame(le.level);
 				if (frame != null) {

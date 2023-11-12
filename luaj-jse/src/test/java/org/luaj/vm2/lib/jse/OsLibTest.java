@@ -123,8 +123,10 @@ class OsLibTest {
 	@Test
 	void testJseOsGetenvForEnvVariables() {
 		LuaValue USER = LuaValue.valueOf("USER");
+		LuaValue USERNAME = LuaValue.valueOf("USERNAME");
 		LuaValue jse_user = jse_lib.get("getenv").call(USER);
-		assertFalse(jse_user.isnil());
+		LuaValue jse_username = jse_lib.get("getenv").call(USERNAME);
+		assertFalse(jse_user.isnil() && jse_username.isnil());
 	}
 
 	@Test
